@@ -1,0 +1,101 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  flex-wrap: wrap;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.logo-bold {
+  font-weight: 600;
+}
+
+.logo-dot {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar-links li a:hover {
+  color: #000;
+}
+
+.navbar-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-outline {
+  background-color: white;
+  border: 2px solid #000;
+  padding: 8px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.btn-outline:hover {
+  background-color: #f2f2f2;
+}
+
+.btn-filled {
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.btn-filled:hover {
+  opacity: 0.9;
+}
+
+/* ---------- Responsive Styles ---------- */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 15px;
+    margin: 15px 0;
+  }
+
+  .navbar-buttons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .btn-outline,
+  .btn-filled {
+    width: 100%;
+    text-align: center;
+  }
+}
