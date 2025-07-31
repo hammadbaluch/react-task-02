@@ -1,0 +1,81 @@
+/* Features.css */
+.features {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #fffef8;
+  padding: 10rem 11rem;
+  flex-wrap: wrap;
+  gap: 5rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.feature-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.icon-wrapper {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.icon-wrapper i {
+  font-size: 4rem;
+  color: #333;
+  position: relative;
+  z-index: 2;
+}
+
+/* Green circle behind credit card icon */
+.icon-wrapper.green::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #a3f7bf;
+  border-radius: 50%;
+  left: -10px;
+  top: -10px;
+  z-index: 1;
+}
+
+/* Yellow circle behind wallet icon */
+.icon-wrapper.yellow::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: #ffe600;
+  border-radius: 50%;
+  right: -20px;
+  top: -10px;
+  z-index: 1;
+}
+
+/* Two overlapping circles behind coins icon */
+
+.icon-wrapper.yellow-overlap::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #ffe600;
+  border-radius: 50%;
+  left: 10px;
+  top: -20px;
+  z-index: 1;
+}
+
+.feature-box p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2c2c2c;
+  line-height: 1.4;
+  /* max-width: 160px; */
+}

@@ -1,59 +1,65 @@
-import React from 'react';
-import './Hero.css';
+// Hero.jsx
+import React from "react";
+import "./Hero.css";
 
 const Hero = () => {
   return (
-    <section className="hero">
-      {/* Decorative Circles */}
-      <div className="circle yellow-circle"></div>
-      <div className="circle green-circle"></div>
-
-      <div className="hero-content container">
+    <section className="hero ">
+      <div className="hero-left">
+        <div className="circle yellow-circle"></div>
+        <div className="circle green-circle"></div>
         <h1>
-          All banks are <br />
-          worried about <br />
-          <span className="highlight">fintech ind.</span>
+          All banks are <br /> worried about <br /> <span>fintech ind.</span>
         </h1>
-        <p className="hero-subtext">
-          We help you get paid any way you want, with the least amount of hassle.
-          It’s just one of the reasons we are the most trusted name.
+        <p>
+          We help you get paid any way you want, with the least amount of
+          hassle. It’s just one of the reasons we are the most trusted name.
         </p>
+        <div className="email-form">
+          <input type="email" placeholder="Business email" />
+          <button>Get started</button>
+        </div>
 
-        <form className="hero-form">
-          <input type="email" placeholder="Business email" required />
-          <button type="submit">Get started</button>
-        </form>
-
-        <div className="hero-stats">
-          <div className="stat">
-            <div className="icon">💼</div>
-            <div>
-              <div className="value">$22k</div>
-              <div className="label">Total Earning</div>
-              <div className="percentage">+10.80%</div>
+        <div className="stats">
+          <div className="stat-box">
+            <div className="icon-circle">
+              <i className="fa-solid fa-sack-dollar"></i>
+            </div>
+            <div className="stat-text">
+              <h3>$22k</h3>
+              <p>
+                Total Earning <span>+20.80%</span>
+              </p>
             </div>
           </div>
-          <div className="stat">
-            <div className="icon">🏧</div>
-            <div>
-              <div className="value">$10k</div>
-              <div className="label">Withdraw</div>
-              <div className="percentage">+05.80%</div>
+          <div className="stat-box">
+            <div className="icon-circle">
+              <i className="fa-solid fa-money-bills"></i>
+            </div>
+            <div className="stat-text">
+              <h3>$10k</h3>
+              <p>
+                Withdraw <span>+05.80%</span>
+              </p>
             </div>
           </div>
-          <div className="stat">
-            <div className="icon">📁</div>
-            <div>
-              <div className="value">15</div>
-              <div className="label">Total Projects</div>
-              <div className="percentage">+10.80%</div>
+          <div className="stat-box">
+            <div className="icon-circle">
+              <i className="fa-regular fa-square-check"></i>
+            </div>
+            <div className="stat-text">
+              <h3>15</h3>
+              <p>
+                Total Projects <span>+10.80%</span>
+              </p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="hero-image">
-        {/* <img src='/girl.png' alt="Smiling woman wearing Fintech shirt" /> */}
+      <div className="hero-right">
+        <div className="background-shape"></div>
+        <img src="/girl.png" alt="Smiling woman" className="hero-image" />
       </div>
     </section>
   );
